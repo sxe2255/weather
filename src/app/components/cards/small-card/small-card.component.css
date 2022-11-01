@@ -1,0 +1,11 @@
+
+.cardSmall{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 100%;
+  border-radius: 20px;
+  background-color: white;
+
+}

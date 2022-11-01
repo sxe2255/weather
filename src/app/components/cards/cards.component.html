@@ -1,0 +1,14 @@
+<div class="content">
+  <h2>Погода в Минске</h2>
+  <div class="cardAll">
+    <app-big-card [weatherDay]="weatherDay"></app-big-card>
+    <div class="cardSmallBox">
+      <app-small-card class="cardSmall" *ngFor="let data of weatherWeek" [data]="data" (newItemEvent)="onChanged($event)"></app-small-card>
+    </div>
+  </div>
+  <div class="widget">
+    <app-feel [weatherDay]="weatherDay" class="widgetMar"></app-feel>
+    <app-wind [weatherDay]="weatherDay" class="widgetMar"></app-wind>
+    <app-cloudiness [weatherDay]="weatherDay" class="widgetMar"></app-cloudiness>
+  </div>
+</div>

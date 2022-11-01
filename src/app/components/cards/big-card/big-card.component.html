@@ -1,0 +1,6 @@
+<div class="card">
+  <h2>Погода</h2>
+  <app-image-card [src]="srcLink"></app-image-card>
+  <div class="cels">{{temperature | KelvinToCelsius | number:'1.0-1'}} &deg;С</div>
+</div>
+

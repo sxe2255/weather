@@ -1,0 +1,7 @@
+<div class="cardSmall"(click)="dataFormation(data)">
+  <h2>{{day | date:'EEEE'}}</h2>
+  <app-image-card [src]="srcLink"></app-image-card>
+  <div>{{day | date:'dd.MM.yyyy'}}</div>
+  <div>{{day | date:'HH:mm'}}</div>
+  <small>Температура: {{temperature | KelvinToCelsius | number:'1.0-1'}}</small>
+</div>
